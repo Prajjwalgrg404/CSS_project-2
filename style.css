@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'monument';
+    src: url(./fonts/MonumentExtended-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px; /*ye isliye use kiya hai kuki box aur nav ke beech me gap ni hai toh yeh gap provide kar deta hai */
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    height: 100%;
+    width: 16%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'monument';
+    font-size: 45px;
+    letter-spacing: -4px;
+    padding-bottom: 7px;
+}
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 26px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(2){
+    width: 27%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+
+
+
+
+
+#center{
+    height: 85%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 4vw;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 53%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: white;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    margin-top: -1vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3vw;
+    mix-blend-mode: difference;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 5px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#over2 img{
+    height: 3vw;
+    width: 3vw;
+}
+
+
+
+
+
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 95%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* object-position: top; */
+    margin: 1vw;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+#alphabet{
+    height: 12vh;
+    width: 100%;
+    text-transform: uppercase;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    letter-spacing: 2px;
+    margin-right: 1.75vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: 400;
+    border-radius: 50%;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    transition: all ease-in 0.25s;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 5vw;
+}
+#part1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1441123694162-e54a981ceba5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    object-fit: cover;
+    object-position: top;
+    background-size: cover;
+    background-position: center;
+}
+#part1 h1{
+    margin-top: 100%;
+    font-family: monument;
+}
+#part2 {
+    height: 100%;
+    width: 46%;
+}
+#part2 img{
+    height: 70%;
+}
+
+
+
+#text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15vw;
+}
+#text1{
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin: 2vw 0;
+}
+#text2{
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin: 2vw 0;
+}
+
